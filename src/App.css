@@ -28,6 +28,23 @@
   color: #61dafb;
 }
 
+.Section {
+  padding: 24px;
+  margin: 8px;
+  background-color: white;
+  color: black;
+}
+
+.Section button {
+  box-shadow: 1px 1px 6px 0px black;
+  margin: 8px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  background: lightgrey;
+  border-radius: 4px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
