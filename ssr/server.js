@@ -32,12 +32,9 @@ const serverRenderer = (req, res, next) => {
         return res.send(
             data.replace(
                 '<div id="root"></div>',
-                `<script>
-                    window.__initialProps = ${JSON.stringify(initialProps)}
-                </script>
-                <div id="root">${ReactDOMServer.renderToString(
+                `${ReactDOMServer.renderToString(
                     <App {...initialProps} />
-                )}</div>`
+                )}`
             )
         );
     });
